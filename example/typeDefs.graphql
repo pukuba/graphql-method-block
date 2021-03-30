@@ -1,4 +1,4 @@
-type Qurey{
+type Query{
     test1: String!
 }
 

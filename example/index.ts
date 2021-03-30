@@ -1,19 +1,21 @@
 import { ApolloServer } from "apollo-server-express"
 import { readFileSync } from "fs"
 import { createServer } from "http"
-
+import path from "path"
+import bodyParser from "body-parser"
 import block from "../lib"
 import express from "express"
 import expressPlayground from "graphql-playground-middleware-express"
 import resolvers from "./resolvers"
-const typeDefs = readFileSync("./typeDefs.graphql", "utf-8")
+const typeDefs = readFileSync(path.join(__dirname, "/typeDefs.graphql"), "utf-8")
 
 const app = express()
-
+app.use(bodyParser.json())
 app.use("/api", block)
 app.get("/graphql", expressPlayground({ endpoint: "/api" }))
 
 const start = async () => {
+
     const server = new ApolloServer({
         typeDefs,
         resolvers

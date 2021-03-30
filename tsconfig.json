@@ -11,6 +11,6 @@
     },
     "include": [
         "lib/**/*",
-        "example/resolvers/Query.js"
+        "example/resolvers/Query.ts"
     ]
 }
