@@ -1,0 +1,7 @@
+type Qurey{
+    test1: String!
+}
+
+type Mutation{
+    test2: String!
+}

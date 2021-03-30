@@ -1,0 +1,40 @@
+{
+  "name": "graphql-method-block",
+  "version": "1.0.0",
+  "description": "graphql-method-block",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "NODE_PATH=src/ nodemon --exec ts-node src/index.js",
+    "example": "ts-node example.ts",
+    "test": "mocha -p example/test/*.test.js --exit",
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pukuba/graphql-method-block.git"
+  },
+  "keywords": [
+    "graphql",
+    "gql",
+    "apollo-server"
+  ],
+  "author": "pukuba",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pukuba/graphql-method-block/issues"
+  },
+  "homepage": "https://github.com/pukuba/graphql-method-block#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.11"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.22.2",
+    "assert": "^2.0.0",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "graphql-playground-middleware-express": "^1.7.22",
+    "http": "^0.0.1-security",
+    "mocha": "^8.3.2",
+    "supertest": "^6.1.3"
+  }
+}

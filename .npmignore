@@ -1,0 +1,6 @@
+lib/
+node_modules/
+example/
+test/
+.travis.yml
+tsconfig.json
