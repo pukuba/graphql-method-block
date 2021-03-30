@@ -4,7 +4,7 @@ export default (req: Request, res: Response, next: NextFunction) => {
     if ("method" in req && req.method === "POST") {
         if ("body" in req && "query" in req.body) {
             if (req.body.query.includes("mutation")) {
-                next()
+                return next()
             }
             else {
                 return res.status(400).send({
@@ -18,5 +18,5 @@ export default (req: Request, res: Response, next: NextFunction) => {
             })
         }
     }
-    next()
+    return next()
 }
