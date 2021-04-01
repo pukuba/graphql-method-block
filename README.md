@@ -1,4 +1,7 @@
 # graphql-method-block
+
+[![Build Status](https://travis-ci.org/pukuba/graphql-method-block.svg?branch=master)](https://travis-ci.org/pukuba/graphql-method-block)
+
 Blocking Methods in GraphQL
 
 ## How to use?
