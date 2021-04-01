@@ -1,6 +1,5 @@
 # graphql-method-block
-graphql-method-block
-
+Blocking Methods in GraphQL
 
 ## How to use?
 

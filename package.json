@@ -1,6 +1,6 @@
 {
   "name": "graphql-method-block",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "graphql-method-block",
   "main": "dist/index.js",
   "scripts": {
